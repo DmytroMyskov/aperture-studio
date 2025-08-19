@@ -6,6 +6,7 @@ html {
   --primary-font: 'Poppins', sans-serif;
   --primary-color: #000000;
   --secondary-color: #ffffff;
+  --primary-accent-color: #C0C0C0;
   --accent-color: #181818;
 }
 
@@ -89,5 +90,61 @@ header {
     color: var(--secondary-color);
     transition: 0.3s ease-in-out;
     border: 1px solid var(--secondary-color);
+  }
+}
+
+.hero {
+  text-align: center;
+
+  img {
+    width: 100%;
+  }
+
+  .hero-info {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+
+  .hero-info span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-accent-color);
+  }
+
+  .hero-info h1 {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 60px;
+    margin-block: 1px 18px;
+  }
+
+  .hero-info p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-accent-color);
+    width: 580px;
+    margin: 0 auto;
+  }
+
+  .features {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    top: 96%;
+    left: 80%;
+    font-size: 12px;
+  }
+
+  ul img {
+    width: unset;
+  }
+
+  ul li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
   }
 }

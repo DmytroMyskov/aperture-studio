@@ -1,0 +1,35 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-font: 'Poppins', sans-serif;
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --accent-color: #181818;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}

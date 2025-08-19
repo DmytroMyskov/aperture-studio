@@ -13,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--primary-font);
 }
 
 a {
@@ -29,7 +30,64 @@ button {
 }
 
 body {
-  font-family: var(--primary-font);
   color: var(--secondary-color);
   background-color: var(--primary-color);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+header {
+  background-color: var(--accent-color);
+  padding: 30px 152px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  ul {
+    display: flex;
+    gap: 32px;
+  }
+
+  li {
+    border-bottom: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+
+  li:hover {
+    border-bottom: 1px solid var(--secondary-color);
+    transition: 0.3s ease-in-out;
+  }
+
+  button {
+    width: 155px;
+    height: 42px;
+    border: none;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-weight: 400;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+  }
+
+  button:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--secondary-color);
+  }
 }

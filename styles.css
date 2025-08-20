@@ -361,10 +361,9 @@ header {
   ul {
     margin-block: 40px 100px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 109px;
     padding: 40px 46px;
+    justify-content: space-evenly;
   }
 }
 
@@ -406,5 +405,128 @@ header {
     color: var(--secondary-color);
     transition: 0.3s ease-in-out;
     border: 1px solid var(--secondary-color);
+  }
+}
+
+footer {
+  padding: 100px 136px;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+
+  .footer-links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-links p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--primary-accent-color);
+    margin-top: 20px;
+  }
+
+  .footer-links-all {
+    display: flex;
+    justify-content: space-between;
+    gap: 55px;
+  }
+
+  .footer-links-all h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-accent-color);
+    margin-bottom: 10px;
+  }
+
+  .footer-links-all ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscription h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .subscription p {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--primary-accent-color);
+  }
+
+  .subscription form {
+    width: 458px;
+    height: 52px;
+    border-radius: 14px;
+    background-color: #F9FAFB;
+    border: none;
+    display: flex;
+    padding: 11px;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscription form input {
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    border-radius: 14px;
+    width: 270px;
+  }
+
+  .subscription form button {
+    width: 120px;
+    height: 40px;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+    color: var(--secondary-color);
+  }
+
+  .subscription form button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--primary-color);
+  }
+
+  .footer-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-social p {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-accent-color);
+  }
+
+  .footer-social ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
   }
 }

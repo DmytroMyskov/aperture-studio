@@ -113,7 +113,7 @@ header {
 
   .hero-info {
     position: absolute;
-    bottom: 60px;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -30%);
   }
@@ -144,7 +144,7 @@ header {
     display: flex;
     gap: 16px;
     position: absolute;
-    bottom: 40px;
+    bottom: 17%;
     right: 40px;
     font-size: 12px;
   }
@@ -206,7 +206,7 @@ header {
   }
 
   .products button:hover {
-    background-color: var(--primary-color);
+    background-color: transparent;
     color: var(--secondary-color);
     transition: 0.3s ease-in-out;
     border: 1px solid var(--secondary-color);
@@ -229,7 +229,9 @@ header {
   }
 }
 
-.big-photo-1 {
+.big-photo-1,
+.big-photo-2,
+.big-photo-3 {
   margin-top: 100px;
   position: relative;
 
@@ -242,7 +244,6 @@ header {
     top: 49%;
     left: 85%;
     transform: translate(-50%, -50%);
-    width: 298px;
   }
 
   .big-photo-info h3 {

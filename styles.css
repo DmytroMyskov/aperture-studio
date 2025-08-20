@@ -232,7 +232,6 @@ header {
 .big-photo-1,
 .big-photo-2,
 .big-photo-3 {
-  margin-top: 100px;
   position: relative;
 
   img {
@@ -267,6 +266,77 @@ header {
     position: absolute;
     bottom: 40px;
     right: 40px;
+    font-size: 12px;
+  }
+}
+
+.gear-cage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+  .gear-left {
+    width: 600px;
+    padding: 60px 40px 60px 120px;
+  }
+
+  .gear-left h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--primary-accent-color);
+  }
+
+  .gear-left h4 {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin-block: 6px 14px;
+  }
+
+  .gear-left p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gear-left button {
+    width: 152px;
+    height: 42px;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    border: 1px solid transparent;
+    transition: 0.3s ease-in-out;
+  }
+
+  .gear-left button:hover {
+    background-color: transparent;
+    color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+    border: 1px solid var(--secondary-color);
+  }
+
+  .gear-right {
+    position: relative;
+  }
+
+  .gear-right img {
+    width: 45vw;
+  }
+
+  .gear-right .features {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    display: flex;
+    gap: 16px;
     font-size: 12px;
   }
 }

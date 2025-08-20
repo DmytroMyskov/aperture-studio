@@ -30,6 +30,16 @@ button {
   cursor: pointer;
 }
 
+.features img {
+  width: unset !important;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 body {
   color: var(--secondary-color);
   background-color: var(--primary-color);
@@ -95,6 +105,7 @@ header {
 
 .hero {
   text-align: center;
+  position: relative;
 
   img {
     width: 100%;
@@ -102,7 +113,7 @@ header {
 
   .hero-info {
     position: absolute;
-    top: 80%;
+    bottom: 60px;
     left: 50%;
     transform: translate(-50%, -30%);
   }
@@ -133,19 +144,9 @@ header {
     display: flex;
     gap: 16px;
     position: absolute;
-    top: 96%;
-    left: 80%;
+    bottom: 40px;
+    right: 40px;
     font-size: 12px;
-  }
-
-  ul img {
-    width: unset;
-  }
-
-  ul li {
-    display: flex;
-    align-items: center;
-    gap: 6px;
   }
 }
 
@@ -225,5 +226,46 @@ header {
 
   .products img {
     width: 100%;
+  }
+}
+
+.big-photo-1 {
+  margin-top: 100px;
+  position: relative;
+
+  img {
+    width: 100%;
+  }
+
+  .big-photo-info {
+    position: absolute;
+    top: 49%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 298px;
+  }
+
+  .big-photo-info h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+  .big-photo-info p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--primary-accent-color);
+  }
+
+  .features {
+    display: flex;
+    gap: 16px;
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    font-size: 12px;
   }
 }
